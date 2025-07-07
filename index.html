@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React GYM</title>
+</head>
+<body>
+    <!-- Here we use the <h1></h1> tag to display the heading using the HTML. -->
+    <!-- <div id="root">
+        <h1>HELLO REACT GYM SESSION</h1>
+    </div> -->
+
+    <!-- Now Instaed of using the HTML H1 Tag we create this H1 tag using the JAVASCRIPT and then use ?\ -->
+     <div id="root"> </div>
+     <script>
+        // Step - 1 : First create the H1 element using the JS after that put the value using the innerHTML
+        const heading = document.createElement("h1")
+        heading.innerHTML = "HELLO REACT USING JAVASCRIPT" 
+
+        // step-2:now we need to find the div ID under which this Heading will display
+        const root = document.getElementById("root")
+        root.appendChild(heading)
+
+     </script>
+</body>
+</html>
